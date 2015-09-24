@@ -1,6 +1,5 @@
 import sklearn
 from numpy import *
-import operator
 from sklearn.linear_model import Perceptron
 f = open("vertigo_train.txt","rU")
 fp = open("vertigo_predict.txt","rU")
@@ -61,6 +60,8 @@ for i in range(len(t_class)):
 		c += 1
 print "Perceptron: %s %% correct" % str(c/len(t_class)*100)
 
+
+'''Nearest naighbor'''
 def distance(t1,t2):
 	d = 0
 	for i in range(len(t1)):
